@@ -3,6 +3,6 @@ pygments: true
 markdown: kramdown
 url: http://lucasviecelli.github.io
 title: lucas viecelli
-tagline: A log of everyday life
+tagline: 
 description: Tudo sobre tecnologia, programação, banco de dados, e o que mais der na telha.
 paginate: 5
