@@ -25,31 +25,39 @@ pessoa[:pessoa][:contato][:nome] # => "Mario"
 
 Usando dig:
 
-> pessoa.dig(:pessoa, :contato, :nome)  # => "Mario"
-> pessoa.dig(:pessoa, :contato22, :nome) # => nil
+> 
+pessoa.dig(:pessoa, :contato, :nome)  # => "Mario"
+> 
+pessoa.dig(:pessoa, :contato22, :nome) # => nil
 
 
 # Grep
 
 Vamos fazer uma seleção dos objetos por tipo. Antes tínhamos que fazer uma iteração com o array, agora podemos fazer de uma forma mais simples.
 
-> valores = [2, 2.0, nil, 'teste']
+> 
+valores = [2, 2.0, nil, 'teste']
 
 Forma Antiga:
 
-> valores.select{|a| a.class == String} # => ["teste"]
+> 
+valores.select{|a| a.class == String} # => ["teste"]
 
 Usando grep:
 
-> valores.grep(String) # => ["teste"]
+> 
+valores.grep(String) # => ["teste"]
 
 
 # Converter um hash para um proc
 
-> hash = { a: 10, b: 20, c: 30}
-> chaves = %i[a c z]
+> 
+hash = { a: 10, b: 20, c: 30}
+> 
+chaves = %i[a c z]
 
-> chaves.map(&hash) # => [10, 30, nil]
+> 
+chaves.map(&hash) # => [10, 30, nil]
 
 
 Esse é o primeiro post do meu Blog, espero que ajude alguém. Sempre devemos pensar e tentar fazer código limpo e claro, que qualquer pessoa possa modificar e entender o que esse código está fazendo.
