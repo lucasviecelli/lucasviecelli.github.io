@@ -20,7 +20,8 @@ O novo método "dig", é um método de instancia, utilizado para acessar valores
 
 Forma antiga: 
 
-> pessoa[:pessoa][:contato][:nome] # => "Mario"
+> 
+pessoa[:pessoa][:contato][:nome] # => "Mario"
 
 Usando dig:
 
