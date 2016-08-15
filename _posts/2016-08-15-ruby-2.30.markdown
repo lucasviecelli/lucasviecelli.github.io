@@ -41,7 +41,7 @@ valores = [2, 2.0, nil, 'teste']
 Forma Antiga:
 
 > 
-valores.select{|v| v.class == String} # => ["teste"]
+\valores.select{|v| v.class == String} # => ["teste"]
 
 Usando grep:
 
