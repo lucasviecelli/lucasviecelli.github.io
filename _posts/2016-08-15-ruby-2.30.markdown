@@ -33,7 +33,7 @@ pessoa.dig(:pessoa, :contato22, :nome) # => nil
 
 # Grep
 
-Vamos fazer uma seleção dos objetos por tipo. Antes tínhamos que fazer uma iteração com o array, agora podemos fazer de uma forma mais simples.
+Vamos fazer uma seleção dos objetos por tipo. Antes tínhamos que fazer uma iteração com uma lista, agora podemos fazer de forma mais simples.
 
 > 
 valores = [2, 2.0, nil, 'teste']
