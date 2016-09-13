@@ -16,11 +16,11 @@ Abaixo vamos ver algumas funções interessantes, que a mairia das pessoas não 
 Verificando se existe um atributo:
 
 > 
->postgres=# select '{"a":1, "b":2}'::jsonb ? 'b';
-> ?column? 
->----------
-> t
->(1 row)
+postgres=# select '{"a":1, "b":2}'::jsonb ? 'b';
+\n?column? 
+\n----------
+\n t
+\n(1 row)
 
 
 Realizando uma busca:
