@@ -12,9 +12,9 @@ Existem diversas tecnologias e banco de dados especializados em armazenar dados 
 Abaixo vamos ver algumas funções interessantes, que a mairia das pessoas não conhece. 
 
 
-Verificando se existe um atributo:
+#Verificando se existe um atributo:
 
-postgres=# select '{"a":1, "b":2}'::jsonb ? 'b';
+> postgres=# select '{"a":1, "b":2}'::jsonb ? 'b';
  ?column? 
 ----------
  t
@@ -85,9 +85,3 @@ postgres=# select * from json_to_record('{"column1":1,"column2":[1,2,3],"column3
 ---------+---------+---------
        1 | [1,2,3] | foo
 (1 row)
-
-
-
-
-
-
