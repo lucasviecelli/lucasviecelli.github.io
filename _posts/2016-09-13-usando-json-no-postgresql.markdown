@@ -77,8 +77,7 @@ Retornando um valor de um jsonb:
 
 ```
 postgres=# select 
-                   json_extract_path_text('{"json1":{"node1":0},
-                                                             "json2":{"node1":666,"node2":"foo"}}','json2', 'node2');
+                   json_extract_path_text('{"json1":{"node1":0}, "json2":{"node1":666,"node2":"foo"}}','json2', 'node2');
 ------------------------
  foo
 (1 row)
@@ -88,9 +87,7 @@ Convertendo jsonb para um record:
 
 ```
 postgres=# select * 
-                    from json_to_record('{"column1":1,
-                                                         "column2":[1,2,3],
-                                                         "column3":"foo"}') 
+                    from json_to_record('{"column1":1, "column2":[1,2,3],"column3":"foo"}') 
                     as x(column1 int, column2 text, column3 text);
 
  column1 | column2 | column3 
