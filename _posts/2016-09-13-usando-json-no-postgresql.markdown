@@ -15,7 +15,7 @@ Abaixo vamos ver algumas funções interessantes, que a mairia das pessoas não 
 
 Verificando se existe um atributo:
 
-> 
+#> 
 postgres=# select '{"a":1, "b":2}'::jsonb ? 'b';
  ?column? 
 ----------
